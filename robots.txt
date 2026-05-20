@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://appadaycreator.github.io/electricity-cost-advisor/sitemap.xml
