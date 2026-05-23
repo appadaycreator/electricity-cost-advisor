@@ -25,6 +25,14 @@
   .screen.active { display: block; }
   .progress-track { background: #fde68a; border-radius: 9999px; height: 8px; }
   .progress-bar { background: #f59e0b; height: 8px; border-radius: 9999px; transition: width 0.4s ease; }
+
+/* Phase 8: Mobile Optimization */
+input, select, textarea { font-size: 16px !important; }
+button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min-width: 48px; touch-action: manipulation; }
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .max-w-lg { padding-left: 1rem; padding-right: 1rem; }
+}
 </style>
     <link rel="canonical" href="https://appadaycreator.com/electricity-cost-advisor/">
 <script type="application/ld+json">
