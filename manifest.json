@@ -4,7 +4,7 @@
   "description": "家族構成・使用量を入力するだけで電気代を節約できる最適プランを無料診断。新電力・電力会社比較。",
   "start_url": "/electricity-cost-advisor/",
   "display": "standalone",
-  "background_color": "#f8faf9",
+  "background_color": "#ffffff",
   "theme_color": "#7c3aed",
   "lang": "ja",
   "icons": [
