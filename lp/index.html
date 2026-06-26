@@ -176,50 +176,6 @@ details[open] .faq-icon{transform:rotate(45deg);}
 .final-cta p{color:rgba(255,255,255,.9);font-size:15px;margin-bottom:32px;}
 .final-cta .btn-amber{max-width:360px;font-size:18px;padding:18px 40px;}
 
-/* Steps flow */
-.steps-section{padding:72px 0;background:var(--white);}
-.steps-flow{display:grid;grid-template-columns:1fr 40px 1fr 40px 1fr;align-items:center;gap:0;}
-.step-box{background:var(--light);border-radius:20px;padding:36px 20px 28px;text-align:center;position:relative;border:2px solid transparent;transition:border-color .2s;}
-.step-box:hover{border-color:var(--green);}
-.step-box .sn{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;box-shadow:0 2px 8px rgba(16,185,129,.4);}
-.step-box .se{font-size:42px;margin-bottom:12px;display:block;}
-.step-box h3{font-size:16px;font-weight:800;color:var(--dark);margin-bottom:6px;}
-.step-box p{font-size:12px;color:var(--gray);line-height:1.65;}
-.step-arr{text-align:center;color:var(--green);font-size:24px;font-weight:900;}
-@media(max-width:680px){.steps-flow{grid-template-columns:1fr;gap:16px;}.step-arr{transform:rotate(90deg);padding:0;font-size:20px;}}
-
-/* Hero savings tag */
-.hero-savings-tag{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#F59E0B,#D97706);color:#fff;padding:10px 24px;border-radius:28px;font-size:17px;font-weight:900;margin-bottom:20px;box-shadow:0 6px 20px rgba(245,158,11,.35);letter-spacing:.5px;}
-.hero-savings-tag small{font-size:11px;font-weight:600;opacity:.9;display:block;line-height:1.2;}
-.hero h1{font-size:clamp(34px,5.5vw,56px)!important;}
-
-/* Feature icon grid */
-.feat-icon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.fic{background:#fff;border-radius:16px;padding:30px 22px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,.07);transition:transform .2s,box-shadow .2s;}
-.fic:hover{transform:translateY(-4px);box-shadow:0 8px 28px rgba(0,0,0,.1);}
-.fic-wrap{width:68px;height:68px;border-radius:50%;background:var(--green-l);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
-.fic-wrap img{width:34px;height:34px;object-fit:contain;}
-.fic-n{font-size:11px;font-weight:800;color:var(--green);letter-spacing:2px;margin-bottom:6px;}
-.fic-t{font-size:15px;font-weight:800;color:var(--dark);margin-bottom:8px;}
-.fic-d{font-size:12px;color:var(--gray);line-height:1.7;}
-@media(max-width:640px){.feat-icon-grid{grid-template-columns:repeat(2,1fr);}}
-
-/* Comparison table */
-.compare-section{padding:80px 0;background:var(--light);}
-.compare-wrap{overflow-x:auto;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.09);}
-.ctable{width:100%;border-collapse:collapse;min-width:500px;}
-.ctable th{padding:18px 16px;font-size:14px;font-weight:800;text-align:center;}
-.ctable .ct-label{background:var(--dark);color:#fff;text-align:left;width:160px;}
-.ctable .ct-base{background:#6B7280;color:#fff;}
-.ctable .ct-new{background:var(--green);color:#fff;}
-.ctable .ct-opt{background:var(--amber);color:#fff;}
-.ctable td{padding:14px 16px;font-size:13px;border-bottom:1px solid #E5E7EB;background:#fff;text-align:center;}
-.ctable .td-label{text-align:left;font-weight:600;color:var(--dark);background:#F9FAFB;}
-.ctable .td-new{color:var(--green-d);font-weight:700;background:var(--green-ll);}
-.ctable .td-opt{color:var(--amber-d);font-weight:700;background:#FEF3C7;}
-.ctable tr:last-child td{border-bottom:none;}
-.badge-rec{display:inline-block;background:rgba(255,255,255,.25);color:#fff;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;margin-bottom:3px;border:1px solid rgba(255,255,255,.5);}
-
 /* Footer */
 footer{background:#111827;color:rgba(255,255,255,.55);padding:48px 20px 24px;}
 .footer-inner{max-width:1100px;margin:0 auto;}
@@ -256,13 +212,9 @@ footer{background:#111827;color:rgba(255,255,255,.55);padding:48px 20px 24px;}
   <div class="hero-overlay"></div>
   <div class="hero-inner">
     <div class="hero-left">
-      <div class="hero-savings-tag">
-        <small>平均削減目安</small>
-        月 ¥5,000〜¥8,500
-      </div>
-      <div class="hero-badge" style="margin-bottom:14px;">
+      <div class="hero-badge">
         <img src="../assets/icons/split/01-01.png" alt="" style="width:14px;height:14px;filter:brightness(0) invert(1);">
-        無料・登録不要・約1分
+        無料診断
       </div>
       <h1>電気代削減診断【無料】<br>月々の削減額を診断</h1>
       <p class="hero-desc">世帯情報を入力するだけで月々の電気代削減額を無料診断。93社から最適プランを提案。年間60,000円以上の節約も可能。</p>
@@ -282,17 +234,6 @@ footer{background:#111827;color:rgba(255,255,255,.55);padding:48px 20px 24px;}
       </div>
       <a href="../" class="btn-amber">削減額を診断する →</a>
       <p class="hero-sub">登録不要・完全無料・約1分で完了</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;">
-        <div style="display:flex;align-items:center;gap:5px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:6px 12px;">
-          <span style="color:#fff;font-size:11px;font-weight:700;">🛡 安心の無料保証</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:5px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:6px 12px;">
-          <span style="color:#fff;font-size:11px;font-weight:700;">🔒 個人情報不要</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:5px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:6px 12px;">
-          <span style="color:#fff;font-size:11px;font-weight:700;">⚡ 93社一括比較</span>
-        </div>
-      </div>
     </div>
     <div class="hero-right">
       <div class="hero-card">
@@ -339,39 +280,6 @@ footer{background:#111827;color:rgba(255,255,255,.55);padding:48px 20px 24px;}
   </div>
 </div>
 
-<!-- Steps -->
-<section class="steps-section" id="howto">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">かんたん3ステップ</span>
-      <h2 class="section-title">電気代削減診断の流れ</h2>
-      <p class="section-desc">3分で完了する無料診断で、最適な電力プランが見つかります</p>
-    </div>
-    <div class="steps-flow">
-      <div class="step-box">
-        <span class="sn">1</span>
-        <span class="se">📝</span>
-        <h3>世帯情報を入力</h3>
-        <p>地域・家族人数・現在の電気代を入力するだけ。登録不要で約1分。</p>
-      </div>
-      <div class="step-arr">→</div>
-      <div class="step-box">
-        <span class="sn">2</span>
-        <span class="se">🔍</span>
-        <h3>AIが比較診断</h3>
-        <p>93社のプランを自動比較。あなたの生活スタイルに最適なプランを即分析。</p>
-      </div>
-      <div class="step-arr">→</div>
-      <div class="step-box">
-        <span class="sn">3</span>
-        <span class="se">💰</span>
-        <h3>削減額を確認</h3>
-        <p>月々の削減目安と推奨プランを即時表示。そのまま申し込みもできます。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Features -->
 <section class="features" id="features">
   <div class="container">
@@ -380,49 +288,58 @@ footer{background:#111827;color:rgba(255,255,255,.55);padding:48px 20px 24px;}
       <h2 class="section-title">電気代を賢く削減する5つのポイント</h2>
       <p class="section-desc">診断結果から、あなたの家庭に最適な節約方法をご提案します</p>
     </div>
-    <div class="feat-icon-grid">
-      <div class="fic">
-        <div class="fic-wrap"><img src="../assets/icons/split/01-05.png" alt="削減額"></div>
-        <div class="fic-n">01</div>
-        <div class="fic-t">月々の削減額がわかる</div>
-        <p class="fic-d">乗り換えで期待できる月々の削減額を即算出。平均¥2,000〜5,000円の削減事例が多数。</p>
+    <div class="feature-list">
+      <div class="feature-card">
+        <div class="feature-content">
+          <img src="../assets/icons/split/01-05.png" alt="" class="feature-icon">
+          <div class="feature-num">01</div>
+          <h3 class="feature-title">月々の削減額がわかる</h3>
+          <p class="feature-desc">現在の電気代と世帯情報をもとに、乗り換えで期待できる月々の削減額を即座に算出。具体的な節約金額が数字でわかります。平均で月¥2,000〜5,000円の削減事例が多数。</p>
+        </div>
+        <img src="../assets/photos/photo_02.jpg" alt="月々の削減額" class="feature-photo">
       </div>
-      <div class="fic">
-        <div class="fic-wrap"><img src="../assets/icons/split/02-02.png" alt="比較"></div>
-        <div class="fic-n">02</div>
-        <div class="fic-t">最適な電力会社がわかる</div>
-        <p class="fic-d">93社を比較し、あなたの地域・使用量・生活スタイルに合わせた最適プランを提案。</p>
+      <div class="feature-card">
+        <div class="feature-content">
+          <img src="../assets/icons/split/02-02.png" alt="" class="feature-icon">
+          <div class="feature-num">02</div>
+          <h3 class="feature-title">最適な電力会社がわかる</h3>
+          <p class="feature-desc">93社の電力会社プランを比較し、あなたの地域・使用量・生活スタイルに合わせた最適プランを提案。乗り換えの手順も丁寧にガイドします。</p>
+        </div>
+        <img src="../assets/photos/photo_03.jpg" alt="電力会社比較" class="feature-photo">
       </div>
-      <div class="fic">
-        <div class="fic-wrap"><img src="../assets/icons/split/02-03.png" alt="再エネ"></div>
-        <div class="fic-n">03</div>
-        <div class="fic-t">再生可能エネルギープランもわかる</div>
-        <p class="fic-d">太陽光・風力など環境に優しいプランも比較提案。節約と環境貢献を同時に実現。</p>
+      <div class="feature-card">
+        <div class="feature-content">
+          <img src="../assets/icons/split/02-03.png" alt="" class="feature-icon">
+          <div class="feature-num">03</div>
+          <h3 class="feature-title">再生可能エネルギープランもわかる</h3>
+          <p class="feature-desc">太陽光・風力発電など環境に優しいプランの選択肢も比較提案。節約と環境への貢献を同時に実現できます。</p>
+        </div>
+        <img src="../assets/photos/photo_04.jpg" alt="再生可能エネルギー" class="feature-photo">
       </div>
-      <div class="fic">
-        <div class="fic-wrap"><img src="../assets/icons/split/01-06.png" alt="家電"></div>
-        <div class="fic-n">04</div>
-        <div class="fic-t">家電別の省エネポイントがわかる</div>
-        <p class="fic-d">冷蔵庫・洗濯機・温水器など主要家電ごとの省エネ対策を具体的にアドバイス。</p>
+      <div class="feature-card">
+        <div class="feature-content">
+          <img src="../assets/icons/split/01-06.png" alt="" class="feature-icon">
+          <div class="feature-num">04</div>
+          <h3 class="feature-title">家電別の省エネポイントがわかる</h3>
+          <p class="feature-desc">冷蔵庫・洗濯機・温水器など主要家電ごとの省エネ対策を具体的にアドバイス。機器別の節約効果も数値で確認できます。</p>
+        </div>
+        <img src="../assets/photos/photo_05.jpg" alt="家電省エネ" class="feature-photo">
       </div>
-      <div class="fic">
-        <div class="fic-wrap"><img src="../assets/icons/split/02-08.png" alt="手順"></div>
-        <div class="fic-n">05</div>
-        <div class="fic-t">乗り換え手順もわかる</div>
-        <p class="fic-d">申し込みから切り替えまで具体的に案内。最短2週間で節約スタート。</p>
-      </div>
-      <div class="fic">
-        <div class="fic-wrap"><img src="../assets/icons/split/01-04.png" alt="実績"></div>
-        <div class="fic-n">06</div>
-        <div class="fic-t">年間節約額のシミュレーション</div>
-        <p class="fic-d">月間削減額を年換算。¥60,000以上の節約実績も多数。具体的な金額で確認できます。</p>
+      <div class="feature-card">
+        <div class="feature-content">
+          <img src="../assets/icons/split/02-08.png" alt="" class="feature-icon">
+          <div class="feature-num">05</div>
+          <h3 class="feature-title">乗り換え手順もわかる</h3>
+          <p class="feature-desc">申し込みから切り替え完了まで、具体的な手順をわかりやすくご案内。手続きはすべてオンラインで完結、最短2週間で節約スタートできます。</p>
+        </div>
+        <img src="../assets/photos/photo_06.jpg" alt="乗り換え手順" class="feature-photo">
       </div>
     </div>
   </div>
 </section>
 
 <!-- Mechanism -->
-<section class="mechanism" id="mechanism">
+<section class="mechanism" id="howto">
   <div class="container">
     <div class="section-header">
       <span class="section-tag">電気代の仕組み</span>
@@ -499,17 +416,16 @@ footer{background:#111827;color:rgba(255,255,255,.55);padding:48px 20px 24px;}
           <div class="sim-bar-wrap"><div class="sim-bar" style="width:84%"></div></div>
         </div>
       </div>
-      <div class="sim-item" style="border:2px solid var(--amber);position:relative;">
-        <div style="position:absolute;top:-12px;left:24px;background:var(--amber);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:800;">最も効果的</div>
+      <div class="sim-item">
         <img src="../assets/photos/photo_13.jpg" alt="乗り換え" class="sim-photo">
         <div class="sim-content">
-          <div class="sim-tag" style="background:#FEF3C7;color:var(--amber-d);">アプローチ ③</div>
+          <div class="sim-tag">アプローチ ③</div>
           <h3 class="sim-title">新電力への乗り換え</h3>
           <div class="sim-amounts">
-            <div class="sim-amount"><div class="n" style="color:var(--amber);">¥6,200+</div><div class="t">月間削減額</div></div>
-            <div class="sim-amount"><div class="n" style="color:var(--amber);">¥74,400+</div><div class="t">年間削減額</div></div>
+            <div class="sim-amount"><div class="n">¥6,200+</div><div class="t">月間削減額</div></div>
+            <div class="sim-amount"><div class="n">¥74,400+</div><div class="t">年間削減額</div></div>
           </div>
-          <div class="sim-bar-wrap"><div class="sim-bar" style="width:100%;background:linear-gradient(90deg,var(--amber),var(--amber-d));"></div></div>
+          <div class="sim-bar-wrap"><div class="sim-bar" style="width:100%"></div></div>
         </div>
       </div>
     </div>
@@ -549,71 +465,6 @@ footer{background:#111827;color:rgba(255,255,255,.55);padding:48px 20px 24px;}
           <div class="provider-sub">年間¥102,000+節約可能</div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Comparison table -->
-<section class="compare-section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">プラン比較</span>
-      <h2 class="section-title">電力プラン別の節約効果比較</h2>
-      <p class="section-desc">今の電力会社と乗り換え後の節約額の違いを一覧で確認</p>
-    </div>
-    <div class="compare-wrap">
-      <table class="ctable">
-        <thead>
-          <tr>
-            <th class="ct-label">比較項目</th>
-            <th class="ct-base">大手電力<br><small>（現状維持）</small></th>
-            <th class="ct-new"><span class="badge-rec">おすすめ</span><br>新電力プラン</th>
-            <th class="ct-opt">総合最適化<br><small>（アンペア+乗換）</small></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="td-label">月間電気代（例）</td>
-            <td>¥20,000</td>
-            <td class="td-new">¥15,800〜</td>
-            <td class="td-opt">¥11,500〜</td>
-          </tr>
-          <tr>
-            <td class="td-label">月間削減額</td>
-            <td>— 基準</td>
-            <td class="td-new">▲ ¥4,200〜</td>
-            <td class="td-opt">▲ ¥8,500〜</td>
-          </tr>
-          <tr>
-            <td class="td-label">年間節約額</td>
-            <td>—</td>
-            <td class="td-new">¥50,400〜</td>
-            <td class="td-opt">¥102,000〜</td>
-          </tr>
-          <tr>
-            <td class="td-label">手続き時間</td>
-            <td>—</td>
-            <td class="td-new">約30分</td>
-            <td class="td-opt">約45分</td>
-          </tr>
-          <tr>
-            <td class="td-label">切替完了まで</td>
-            <td>—</td>
-            <td class="td-new">最短2週間</td>
-            <td class="td-opt">最短2週間</td>
-          </tr>
-          <tr>
-            <td class="td-label">停電リスク</td>
-            <td>変わらず安全</td>
-            <td class="td-new">変わらず安全</td>
-            <td class="td-opt">変わらず安全</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div style="text-align:center;margin-top:36px;">
-      <a href="../" class="btn-amber" style="max-width:340px;display:inline-block;">削減額を無料で診断する →</a>
-      <p style="color:var(--gray);font-size:12px;margin-top:10px;">登録不要・完全無料・約1分で完了</p>
     </div>
   </div>
 </section>
